@@ -3,7 +3,7 @@ var connect = require('../utils/sqlConnect');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/getCars', (req, res) => {
+router.get('/', (req, res) => {
   connect.query('SELECT * FROM mainmodel', (err, result) => {
     if (err) {
       throw err; console.log(err);

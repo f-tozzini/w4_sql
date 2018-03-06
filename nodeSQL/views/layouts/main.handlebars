@@ -5,12 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- {{#if kidsmode}}
+      <link rel="stylesheet" href="stylesheets/kids.css">
+  {{/if}} -->
+
+  {{#if cms}}
+      <link rel="stylesheet" href="/stylesheets/form.css">
+  {{/if}}
+
   <title>{{ title }}</title>
 </head>
 <body>
   {{{ body }}}
 
+{{#if mainpage}}
+  <script src="javascripts/main.js"></script>
+{{/if}}
 
-<script src="javascripts/main.js"></script>
+{{#if cms}}
+  <script src="/javascripts/cmsHandler.js"></script>
+{{/if}}
+
 </body>
 </html>

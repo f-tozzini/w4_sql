@@ -3,7 +3,9 @@ var config = {
   password: "root",
   port: 8889,
   host: "localhost",
-  database: "cooperStuff"
+  database: "cooperStuff",
+
+  kidsmode : false
 }
 
 module.exports = config;
